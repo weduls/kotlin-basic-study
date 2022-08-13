@@ -1,3 +1,5 @@
+import Java_NullSafety.getNullStr
+
 fun main() {
 
     // null을 주입하려면 문제가 발생한다.
@@ -29,4 +31,11 @@ fun main() {
     val c: String? = null
     val d = c!!.length
 
+    // 코틀린 내에서 자바 코드를 사용할 때는 널 가능성 여부를 염두해야한다.
+    // npe 발생
+    println(Java_NullSafety.getNullStr().length)
+    // null 출력으로 npe 방지
+    println(Java_NullSafety.getNullStr()?.length)
+
 }
+
