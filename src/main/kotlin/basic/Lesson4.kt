@@ -1,4 +1,4 @@
-import Java_NullSafety.getNullStr
+import basic.Java_NullSafety
 
 fun main() {
 
