@@ -3,7 +3,7 @@ package upscale
 import java.util.LinkedList
 import java.util.stream.Collectors
 
-fun main() {
+fun main2() {
     /**
      * list
      */
@@ -90,8 +90,8 @@ fun main() {
         .asSequence()
         .filter { it == 3 }
         .toList()
-}
 
+}
 
 
 
